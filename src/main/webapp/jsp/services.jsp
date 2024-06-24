@@ -24,6 +24,7 @@
     }
     function showwithdrawdiv()
     {
+        alert("gel");
         document.getElementById("services").style.display='none';
         document.getElementById("withdraw").style.display='inline';
     }
@@ -57,11 +58,14 @@
         <input type="button" value="Check balance" onclick="checkbalance()">
     </form>
     
-    <form action="withdraw" name="withdraw" id="withdraw">
+    <form action="checkaccno" name="withdraw" id="withdraw">
+        Hello
+        <input type="hidden" name="accno" value="${accno}" readonly>
         <input type="hidden" name="email" value="${email}" readonly>
         <input type="hidden" name="password" value="${password}" readonly>
         Please enter the account number: <input type="number" name="accno" value="78731">
-        <input type="button" value="Check balance" onclick="withdraw()">
+        <input type="submit" value="Confirm">
+        bitches
     </form>
     
 </body>
